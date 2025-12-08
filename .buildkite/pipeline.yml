@@ -19,6 +19,7 @@ steps:
             - BUILDKITE_TEST_ENGINE_API_ACCESS_TOKEN
 
   - label: ":ruby: Ruby: Minitest"
+    parallelism: 2
     command: "cd ruby-minitest && bin/test"
     soft_fail: true
     plugins:
